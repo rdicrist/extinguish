@@ -10,7 +10,8 @@ Version:
 Changelog:  
 ####  **+Legal**  
 	+Added boilerplate terms of use and privacy policy.
-	+Added disclaimer to homepage and sign up.
+	+Added disclaimer to homepage and sign up.  
+	+Added trademark and copyright marks.  
 	*Existing privacy policy and terms of use consolidated to rules and About Us  
 ####  **+Seeds**  
 	+Added seeded Message board topics and seeded rules posts.  
