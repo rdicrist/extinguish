@@ -290,6 +290,9 @@ GEM
     rails-timeago (2.16.0)
       actionpack (>= 3.1)
       activesupport (>= 3.1)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
     rails_email_preview (2.0.4)
       rails (>= 4.2)
       request_store
@@ -300,6 +303,8 @@ GEM
       rails (>= 3.1)
       rest-client (~> 2.0)
       rubyzip (~> 1)
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (5.1.4)
       actionpack (= 5.1.4)
       activesupport (= 5.1.4)
@@ -444,6 +449,7 @@ DEPENDENCIES
   puma (~> 3.7)
   rails (~> 5.1.4)
   rails-timeago
+  rails_12factor
   rails_email_preview
   rails_real_favicon
   roadie-rails
