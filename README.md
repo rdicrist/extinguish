@@ -13,6 +13,8 @@ Changelog:
 	+Added disclaimer to homepage and sign up.  
 	+Added trademark and copyright marks.  
 	*Existing privacy policy and terms of use consolidated to rules and About Us  
+####  **+Resources**
+	+Added icons and links to domestic violence hotline to open call dialogue on mobile/desktop call apps.
 ####  **+Seeds**  
 	+Added seeded Message board topics and seeded rules posts.  
 	-Removed seeded admins except for “Admin.”  
