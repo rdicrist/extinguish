@@ -7,7 +7,7 @@ Billy Groble
 ##  Version:
 **2.0**
 
-Changelog:  
+##  Changelog:  
 ####  **+Legal**  
 	+Added boilerplate terms of use and privacy policy.
 	+Added disclaimer to homepage and sign up.  
