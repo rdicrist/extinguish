@@ -62,6 +62,8 @@ Changelog:
 	*Moderation user search now functioning.  
 	*Moderators can no longer ban/block other moderators.  
 	-Removed admin profile links in moderation headers and flash messages.  
+####  ***Security**  
+	+Added SSL certificate 
 ####  ***Sign-up**  
 	+Added field/validations for screening.  
 	+Added checkboxes/validations for age and terms of service.  
