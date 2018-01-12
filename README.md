@@ -52,6 +52,7 @@ Changelog:
 ####  ***Home**  
 	+Main logo changed to svg and now plays small animation on click. (original logo used on mobile)  
 	*Keyboard shortcut redirects to buzzfeed now. no longer displays shortcut on mobile.  
+	*Made the "Sign Up Now" button slightly bigger!!!
 	*Minor grammar changes.  
 ####  ***Moderation**  
 	+Added new moderation state “banned.”  
@@ -75,5 +76,5 @@ Changelog:
 	*Optimized animations for safari.  
 	*Improved mobile experience.  
 	*Yellow highlighting!!!  
-	*Moderator message board button text doesn’t disappear on highlight.  
+	*Moderator message board button text doesn’t disappear on highlight. 
 	
