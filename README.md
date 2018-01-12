@@ -71,6 +71,7 @@ Changelog:
 	*All character length validations client AND server side now.  
 	*reworded error messages.  
 ####  **Misc.**   
+	+Added Google Analytics Tracking (and accomodations in privacy policy).
 	*Misc. code refactoring and grammar changes.  
 	*Misc. style changes.  
 	*Minor color scheme changes.  
