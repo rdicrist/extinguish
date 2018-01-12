@@ -1,10 +1,10 @@
-Extinguish:  
+#  Extinguish:  
 Ethan Bogart,  
 Ricki DiCristoforo,  
 Julie Gerstley,  
 Billy Groble  
 
-Version:
+##  Version:
 **2.0**
 
 Changelog:  
