@@ -57,6 +57,7 @@ Billy Groble
 ####  ***Moderation**  
 	+Added new moderation state “banned.”  
 	+Moderation>User table now keeps track of which admin moderated each user.  
+	+Admin user can now add or remove moderators from within the user moderation menu, cannot be removed as moderator
 	*Moved and integrated ban button to forum>moderation>users page.  
 	*Re-worked ban function. Also prompts admin with confirmation message on ban.  
 	*Moderation user search now functioning.  
