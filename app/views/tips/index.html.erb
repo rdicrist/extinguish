@@ -16,23 +16,23 @@
         <div>
             <div class="tip-dropdown">
                 <h2 id="first" class="tip-header">
-                    <%= subject.topic.name %>
+                    <%= subject.topic.name.split.map(&:capitalize)*' ' %>
                     <div class="tip-dropdown-button"><i class="material-icons md-36">keyboard_arrow_right</i></div>
                 </h2>
                 <div class="tip-minimize-window">
                     <% subject_details = subjects.select(:subtopic_id).distinct.order(subtopic_id: :asc) %><!--.limit(10)-->
                     <% subject_details.each do |subject_detail| %>
                         <% if subject_detail.topic_id == subject.topic_id %>
-                            <ul class="tip-detail-list">
+                            <ul id="first" class="tip-detail-list">
                                 <li>
                                     <h2 id="second" class="tip-header">
-                                        <%= subject_detail.subtopic.name %>
+                                        <%= subject_detail.subtopic.name.split.map(&:capitalize)*' ' %>
                                         <div class="tip-dropdown-button"><i class="material-icons md-36">keyboard_arrow_right</i></div>
                                     </h2>
                                     <div class="tip-minimize-window">
                                         <% tips = @tips.where(approved: true).where(topic_id: subject.topic_id).where(subtopic_id: subject_detail.subtopic_id) %>
                                         <% tips.each do |tip| %>
-                                            <ul class="tip-detail-list">
+                                            <ul id="second" class="tip-detail-list">
                                                 <li>
                                                     <h2 id="third" class="tip-header">
                                                         <%= tip.title.split.map(&:capitalize)*' ' %>
@@ -90,8 +90,16 @@
     </div>
 <% end %>
 
+<% if current_user.admin %>
+    <div id="mod-controls" align="center">
+        <%= button_to "Add Topic", new_topic_path, :method => "get" %>
+        <%= button_to "Add Subtopic", new_subtopic_path, :method => "get" %>
+    </div>
+<% end %>
+
 <script>
-$(".tip-header").click(function(){
+$(".tip-header").click(function(e){
+    e.preventDefault();
     if($(this.children[0]).html() == '<i class="material-icons md-36">keyboard_arrow_right</i>'){
         $(this.children[0]).html('<i class="material-icons md-36">keyboard_arrow_down</i>');
     }

@@ -1,0 +1,12 @@
+<%= render 'tips/nav' %>
+
+<div align="center">
+<h1>Add Topic</h1>
+</div>
+
+<%= form_for Topic.new do |f| %>
+    <%= f.label :name, "New Topic" %>
+    <%= f.text_field :name, :required => true, maxlength: 45, id: "name" %>
+    <br />
+    <%= submit_tag "Add Topic" %>
+<% end %>

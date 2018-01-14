@@ -7,10 +7,11 @@
 <h1>
   <%= user.thredded_display_name %>
 </h1>
-  
-    <h3>Current Moderation Status: <%= user_detail.moderation_state.to_s.humanize %></h3>
+    <% if user.admin %>
+      <h3>Moderator</h3>
+    <% end %>
+    <h3>Current Profile Status: <%= user_detail.moderation_state.to_s.humanize %></h3>
     <%= link_to t('nav.edit_my_account'), edit_user_registration_path %>
-    
 <ul>
   <li><%= t 'thredded.users.user_since_html', time_ago: time_ago(user.created_at) %></li>
   <% if user_detail.last_seen_at %>

@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: https://github.com/BillG18/thredded.git
-  revision: c6204e121a31d5f94fa09e8f17853258809cf462
+  revision: c79f8e3427703cd2fb4b378a6a09207bd747cf91
   specs:
     thredded (0.13.4)
       active_record_union (>= 1.2.0)
@@ -75,7 +75,7 @@ GEM
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     arel (8.0.0)
-    autoprefixer-rails (7.2.4)
+    autoprefixer-rails (7.2.5)
       execjs
     babel-source (5.8.35)
     babel-transpiler (0.7.0)

@@ -1,0 +1,18 @@
+<%= render 'tips/nav' %>
+
+<div align="center">
+<h1>Add Subtopic</h1>
+</div>
+
+<%= form_for Subtopic.new do |f| %>
+    <div class="field">
+        <%= f.label :topic_id %>
+        <%= f.collection_select :topic_id, Topic.order(:id), :id, :name, include_blank: false, include_blank: "Please select a topic", :required => true %>
+    </div>
+
+    <%= f.label :name, "New Subtopic" %>
+    <%= f.text_field :name, :required => true, maxlength: 45, id: "name" %>
+    
+    <br />
+    <%= submit_tag "Add Subtopic" %>
+<% end %>
