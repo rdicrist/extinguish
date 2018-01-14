@@ -83,4 +83,5 @@ Billy Groble
 	*Improved mobile experience.  
 	*Yellow highlighting!!!  
 	*Moderator message board button text doesn’t disappear on highlight. 
+	*Quick exit now redirects to buzzfeed.
 	
