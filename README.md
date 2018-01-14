@@ -12,7 +12,7 @@ Billy Groble
 	+Added boilerplate terms of use and privacy policy.
 	+Added disclaimer to homepage and sign up.  
 	+Added trademark and copyright marks.  
-	*Existing privacy policy and terms of use consolidated to rules and About Us  
+	*Existing privacy policy and terms of use consolidated to rules and About Us.  
 ####  **+Resources**
 	+Added icons and links to domestic violence hotline to open call dialogue on mobile/desktop call apps.
 ####  **+Seeds**  
@@ -24,19 +24,20 @@ Billy Groble
 	+Topics and Subtopics can be edited via “topic.csv” and “subtopic.csv” found at the root. Can be updated by re-seeding.  
 	+Added tip moderation with approve and delete controls.  
 	+Added wildcard tip search (searches title and body).  
+	+Moderators can now add topics or subtopics in-app.
 	*Reworked tip submission form to auto populate subcategory via js.  
 	-Removed new tip page, consolidated new and index pages.  
 	-Tips no longer displayed in table.  
 ####  **+User page**  
 	+Re-added user detail page and edit page. Now only visible to the current user.  
 	+User’s moderation status now visible on their details page.  
-	+If a user is a moderator their page has a "Moderator" caption
+	+If a user is a moderator their page has a "Moderator" caption.
 	+Added confirmation message for account deletion.  
 ####  ***Flash-messages**  
 	+Added new background colors to fit color scheme. Added shadow. Misc. styling.  
  	+Standardized flash messages and thredded alerts to use similar styling.  
 ####  ***Forms**  
-	+Added misc. placeholder text to improve UX
+	+Added misc. placeholder text to improve UX.
 ####  ***Forums**  
 	+Added lock icon (from new version of thredded) to locked threads.  
 	+New user’s posts not visible until posts or user’s approved by moderator.  
@@ -65,7 +66,7 @@ Billy Groble
 	*Moderators can no longer ban/block other moderators.  
 	-Removed admin profile links in moderation headers and flash messages.  
 ####  ***Security**  
-	+Added SSL certificate 
+	+Added SSL certificate. 
 ####  ***Sign-up**  
 	+Added field/validations for screening.  
 	+Added checkboxes/validations for age and terms of service.  
