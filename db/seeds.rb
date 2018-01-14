@@ -17,15 +17,6 @@ CSV.foreach(Rails.root.join("subtopic.csv"), headers: true) do |row|
   end
 end
 
-halo = User.create!(
-    username: "Halo",
-    password: "123456",
-    admin: true,
-    minimum_age: true,
-    terms_of_service: true,
-    screening: "bark!"
-)
-
 admin = User.create!(
     username: "Admin",
     password: "123456",
@@ -33,6 +24,15 @@ admin = User.create!(
     minimum_age: true,
     terms_of_service: true,
     screening: "Administrator Account"
+)
+
+halo = User.create!(
+    username: "Halo",
+    password: "123456",
+    admin: true,
+    minimum_age: true,
+    terms_of_service: true,
+    screening: "bark!"
 )
 
 general = Thredded::Messageboard.create!(

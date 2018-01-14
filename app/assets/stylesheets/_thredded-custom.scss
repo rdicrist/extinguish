@@ -10,10 +10,15 @@
   background: $highlight-color; /* Gecko Browsers */
 }
 
+html {
+  //-webkit-backface-visibility: hidden;
+}
+
 body{
   //prevent safari artefacts on tip animations
   //-webkit-perspective: 1000; //breaks chrome header
   -webkit-backface-visibility: hidden;
+  -webkit-transform:translate3d(0,0,0);
 } 
 
 .thredded--main-container {
@@ -115,17 +120,18 @@ body{
 
 //-----Rick's Tips Moderation-----
 .tips--moderation-navigation {
-  border-bottom: 1px solid;
+  border-bottom: thin solid;
 }
 
 .tips--moderation-navigation--items {
   position: relative;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
   #nav-link {
     position: absolute;
     right: 0;
     bottom: 0;
+    padding: 0.5rem 0;
     @include thredded-media-mobile {
       position: relative;
       text-align: right;
@@ -220,7 +226,6 @@ body{
 .tip-dropdown {
   width: 100%; 
   border-bottom: 1px solid;
-  transition: border-bottom 2s;
   -webkit-transform:translate3d(0,0,0); //safari
 }
 
@@ -269,7 +274,7 @@ body{
   }
   li {
     border-bottom: none;
-    -webkit-transform:translate3d(0,0,0);
+    //-webkit-transform:translate3d(0,0,0);
     #tip-body {
       margin-bottom: 0.5rem;
     }
@@ -287,6 +292,15 @@ body{
   }
   p {
     font-size: 120%;
+  }
+}
+
+
+#mod-controls {
+  padding-top: 2rem;
+  form {
+    padding: 0 0.3rem;
+    display: inline-block;
   }
 }
 
