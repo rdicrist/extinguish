@@ -10,16 +10,16 @@
   background: $highlight-color; /* Gecko Browsers */
 }
 
-html {
-  //-webkit-backface-visibility: hidden;
-}
-
 body{
   //prevent safari artefacts on tip animations
   //-webkit-perspective: 1000; //breaks chrome header
   -webkit-backface-visibility: hidden;
   -webkit-transform:translate3d(0,0,0);
 } 
+
+select:active, select:hover, select:focus {
+  outline-color: $brand-primary;
+}
 
 .thredded--main-container {
   // The padding and max-width are handled by the app's container.
