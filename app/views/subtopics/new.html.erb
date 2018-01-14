@@ -1,5 +1,7 @@
 <%= render 'tips/nav' %>
-
+<% if !current_user.admin? %>
+  <p class="thredded--alert thredded--alert-warning">You are not authorized to view this content</p>
+<% else %>
 <div align="center">
 <h1>Add Subtopic</h1>
 </div>
@@ -15,4 +17,5 @@
     
     <br />
     <%= submit_tag "Add Subtopic" %>
+<% end %>
 <% end %>
