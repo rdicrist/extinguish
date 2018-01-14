@@ -30,6 +30,7 @@ Billy Groble
 ####  **+User page**  
 	+Re-added user detail page and edit page. Now only visible to the current user.  
 	+User’s moderation status now visible on their details page.  
+	+If a user is a moderator their page has a "Moderator" caption
 	+Added confirmation message for account deletion.  
 ####  ***Flash-messages**  
 	+Added new background colors to fit color scheme. Added shadow. Misc. styling.  
