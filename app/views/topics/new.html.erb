@@ -1,5 +1,7 @@
 <%= render 'tips/nav' %>
-
+<% if !current_user.admin? %>
+  <p class="thredded--alert thredded--alert-warning">You are not authorized to view this content</p>
+<% else %>
 <div align="center">
 <h1>Add Topic</h1>
 </div>
@@ -9,4 +11,5 @@
     <%= f.text_field :name, :required => true, maxlength: 45, id: "name" %>
     <br />
     <%= submit_tag "Add Topic" %>
+<% end %>
 <% end %>
