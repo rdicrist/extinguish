@@ -106,7 +106,7 @@ $(".tip-header").click(function(e){
     else{
         $(this.children[0]).html('<i class="material-icons md-36">keyboard_arrow_right</i>');
     }
-    $(this.parentNode.children[1]).slideToggle();
+    $(this.parentNode.children[1]).slideToggle("linear");
 });
 
 $("#title").focus(function(){
