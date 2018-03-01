@@ -3,7 +3,7 @@
 <%= render 'nav' %>
 
 <div align="center">
-    <h1>Rick's Tips</h1>
+    <h1>Community Tips</h1>
 </div>
 <% subjects = @tips.select(:topic_id).distinct.where(approved: true).order(topic_id: :asc) %>
 <% if subjects.length == 0 %>
@@ -62,8 +62,8 @@
 <div id="tip-bottom"></div>
 
 <div class="tip-blurb">
-    <h1 align="center">What are Rick's Tips?</h1>
-    <p>Do you have any tips or advice that you think could help someone somewhere? We want this to be a place you can put it. Rick's Tips are our own constantly evolving resource that is continuously being built by YOU the community. We want Rick's Tips to be a platform for our community member's voice's to be heard. Each tip submitted is completely anonymous, like the rest of Extinguish™, and reviewed by one of our moderators before it is sorted and displayed to keep our tips as helpful as possible.</p>
+    <h1 align="center">What are Community Tips?</h1>
+    <p>Do you have any tips or advice that you think could help someone somewhere? We want this to be a place you can put it. Community Tips are our own constantly evolving resource that is continuously being built by YOU the community. We want Community Tips to be a platform for our community member's voice's to be heard. Each tip submitted is completely anonymous, like the rest of Extinguish™, and reviewed by one of our moderators before it is sorted and displayed to keep our tips as helpful as possible.</p>
     <p>If you have any suggestions for new tip topics or subtopics feel free to <%= link_to 'contact us', "/contacts/new" %>!</p>
     
 </div>
