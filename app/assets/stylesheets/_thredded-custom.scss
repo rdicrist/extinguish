@@ -14,7 +14,7 @@ body{
   //prevent safari artefacts on tip animations
   //-webkit-perspective: 1000; //breaks chrome header
   -webkit-backface-visibility: hidden;
-  -webkit-transform:translate3d(0,0,0);
+  // -webkit-transform:translate3d(0,0,0);
 } 
 
 select:active, select:hover, select:focus {
