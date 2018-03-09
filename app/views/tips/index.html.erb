@@ -34,10 +34,17 @@
                                         <% tips.each do |tip| %>
                                             <ul id="second" class="tip-detail-list">
                                                 <li>
-                                                    <h2 id="third" class="tip-header">
+                                                    <h2 id="third" class="tip-title">
                                                         <%= tip.title.split.map(&:capitalize)*' ' %>
-                                                        <div class="tip-dropdown-button"><i class="material-icons md-36">keyboard_arrow_right</i></div>
+                                                        <!--<div class="tip-dropdown-button"><i class="material-icons md-36">keyboard_arrow_right</i></div>-->
                                                     </h2>
+                                                    <!--REMOVE TO MINIMIZE TIP CONTENT ON LOAD-->
+                                                    
+                                                    <!--<div id="tip-body"> -->
+                                                    <!--    < %= tip.body %>-->
+                                                    <!--</div>-->
+                                                    <!--END REMOVE-->
+                                                    <!--UNCOMMENT TO MINIMIZE TIP CONTENT ON LOAD-->
                                                     <ul class="tip-individual-list">
                                                         <li>
                                                             <div id="tip-body">
@@ -45,6 +52,7 @@
                                                             </div>
                                                         </li>
                                                     </ul>
+                                                    <!--END UNCOMMENT-->
                                                 </li>
                                             </ul>
                                         <% end %>
@@ -62,9 +70,8 @@
 <div id="tip-bottom"></div>
 
 <div class="tip-blurb">
-    <h1 align="center">What are Community Tips?</h1>
-    <p>Do you have any tips or advice that you think could help someone somewhere? We want this to be a place you can put it. Community Tips are our own constantly evolving resource that is continuously being built by YOU the community. We want Community Tips to be a platform for our community member's voice's to be heard. Each tip submitted is completely anonymous, like the rest of Extinguish™, and reviewed by one of our moderators before it is sorted and displayed to keep our tips as helpful as possible.</p>
-    <p>If you have any suggestions for new tip topics or subtopics feel free to <%= link_to 'contact us', "/contacts/new" %>!</p>
+    <h1 align="center">What are Rick's Tips?</h1>
+    <p>Rick's Tips are tips submitted by the community to help others. If you have any suggestions for new tip topics or subtopics feel free to <%= link_to 'contact us', "/contacts/new" %>!</p>
     
 </div>
 

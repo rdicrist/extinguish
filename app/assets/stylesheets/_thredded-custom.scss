@@ -54,6 +54,11 @@ select:active, select:hover, select:focus {
   }
 }
 
+#disclaimer {
+  font-size: 60%;
+  color: $banner-color;
+}
+
 .extinguish-logo {
   display: none;
 }
@@ -210,7 +215,8 @@ select:active, select:hover, select:focus {
   }
 }
 
-#third.tip-header {
+#third.tip-title {
+  cursor: initial;
   font-size: 0.9em;
   @include thredded-media-tablet-and-up {
     font-size: 1em;
@@ -259,7 +265,7 @@ select:active, select:hover, select:focus {
 }
 
 .tip-individual-list {
-  display: none;
+  // display: none;
   list-style: none;
   margin: 0;
   font-size:  0.9em;
