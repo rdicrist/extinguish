@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: https://github.com/Extinguish-io/thredded.git
-  revision: c98e5096ef094a8674649f13a34d6c6f91dc2e76
+  revision: 3450cd10f1e4fa25fa9a53a5036afb8c01d2841f
   specs:
     thredded (0.13.4)
       active_record_union (>= 1.2.0)
