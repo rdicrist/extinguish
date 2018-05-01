@@ -62,13 +62,15 @@ gem 'plain-david'
 # for local development:
 # gem 'thredded', :path => 'thredded'
 
-gem 'thredded', :git => 'https://github.com/BillG18/thredded.git'
+# gem 'thredded', :git => 'https://github.com/BillG18/thredded.git'
+gem 'thredded', :git => 'https://github.com/Extinguish-io/thredded.git'
 # :ref => 'b1945bd'
 
 gem 'rails-timeago'
 gem 'dalli'
 gem 'connection_pool'
-gem 'haikunator', :git => 'https://github.com/BillG18/haikunator.git'
+#gem 'haikunator', :git => 'https://github.com/BillG18/haikunator.git'
+gem 'haikunator', :git => 'https://github.com/Extinguish-io/haikunator.git'
 gem 'mail_form'
 gem 'simple_form'
 gem 'sdoc'
