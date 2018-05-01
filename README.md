@@ -1,7 +1,7 @@
 ![Extinguish Logo](https://user-images.githubusercontent.com/9058629/39490740-6bec06a2-4d4f-11e8-89be-5abbcf0409ed.png "Extinguish Logo")
 
 ##  Team:
-Billy Groble,
+Billy Groble,  
 Ethan Bogart,  
 Ricki DiCristoforo,  
 Julie Gerstley
