@@ -123,15 +123,13 @@ config.action_mailer.raise_delivery_errors = true
 
 config.action_mailer.delivery_method = :smtp
 config.action_mailer.smtp_settings = {
-address: 'smtp.gmail.com',
-port: 587,
-domain: 'gmail.com',
-user_name: 'extinguishcontact@gmail.com',
-password: 'Kurdia123',
-authentication: 'plain',
-enable_starttls_auto: true 
+  :authentication => :plain,
+  :address => "smtp.mailgun.org",
+  :port => 587,
+  :domain => "sandboxe012b15bc3c641649e2178dabd67fd4e.mailgun.org",
+  :user_name => "postmaster@sandboxe012b15bc3c641649e2178dabd67fd4e.mailgun.org",
+  :password => "eaa9d161e9af3bce3164c870041262ff-116e1e4d-18b27dc7"
 }
-config.action_mailer.default_url_options = { :host => "https://social-support-network-2-rdicrist.c9users.io" }
 
-  
+
 end
