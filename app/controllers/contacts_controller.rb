@@ -5,9 +5,9 @@ class ContactsController < ApplicationController
   end
 
   def create
-    @record = Record.new
-    if @record.save
-      ModelMailer.new_record_notification(@record).deliver
+    # @contact = Contact.new
+    @contact = Contact.new(params[:contact])
+    if ModelMailer.new_record_notification(@contact).deliver
       redirect_to "/", alert: "Thank you for your message. We will contact you soon!"
       # flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
     else
