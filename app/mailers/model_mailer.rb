@@ -11,8 +11,8 @@ class ModelMailer < ApplicationMailer
    from: "Extinguish.io <me@sandboxe012b15bc3c641649e2178dabd67fd4e.mailgun.org.com>",
    reply_to: "Extinguish.io <me@sandboxe012b15bc3c641649e2178dabd67fd4e.mailgun.org.com>"
    )
-  def new_record_notification(record)
-    @record = record
+  def new_record_notification(content)
+    @email = content
     mail to: "extinguishcontact@gmail.com", subject: "New Contact From #{@email.name.capitalize} (#{@email.email})"
   end
 end
