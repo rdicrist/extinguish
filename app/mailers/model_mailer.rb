@@ -13,7 +13,7 @@ class ModelMailer < ApplicationMailer
    )
   def new_record_notification(content)
     @email = content
-    if @email.email
+    if (@email.email != "")
       mail to: "extinguishcontact@gmail.com", subject: "New Contact From #{@email.name.capitalize} (#{@email.email})"  
     else
       mail to: "extinguishcontact@gmail.com", subject: "New Contact From #{@email.name.capitalize} (Anonymous)"  
