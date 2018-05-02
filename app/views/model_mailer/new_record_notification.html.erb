@@ -3,11 +3,7 @@
         <img src=<%= asset_path('extinguish_vinyl_4x4.png') %> alt="Extinguish logo" style="width:10%">
     </div>
     <h1 style="color: #a772b2;">
-        <% if @email.name %>
-            <%= @email.name.capitalize %> Said:
-        <% else %>
-            An anonymous user said:
-        <% end %>
+        <%= @email.name.capitalize %> Said:
     </h1>
     <h2 style="color: #18191e;">
       <%= @email.message %>
