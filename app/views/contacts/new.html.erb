@@ -3,7 +3,7 @@
 </div>
   <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
     <%= f.input :name, :required => true, maxlength: 100 %>
-    <%= f.input :email, :required => true, maxlength: 100, placeholder: "If you don't want to provide your own email you can use anonymous@extinguish.io" %>
+    <%= f.input :email, :required => false, maxlength: 100, placeholder: "Your Email is not required, but we won't be able to reply to you if you chose not to provide it." %>
     <%= f.input :message, :as => :text, :required => true, maxlength: 500 %>
     <div>
       </br>
