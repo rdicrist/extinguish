@@ -95,6 +95,7 @@ body {
 
 .app-container {
   background: $body-background-color;
+  min-height: (100% - $footer-height);
 }
 
 .turbolinks-progress-bar {
