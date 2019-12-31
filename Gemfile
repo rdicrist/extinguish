@@ -63,14 +63,14 @@ gem 'plain-david'
 # gem 'thredded', :path => 'thredded'
 
 # gem 'thredded', :git => 'https://github.com/BillG18/thredded.git'
-gem 'thredded', :git => 'https://github.com/Extinguish-io/thredded.git'
+gem 'thredded', :git => 'https://github.com/rdicrist/thredded.git'
 # :ref => 'b1945bd'
 
 gem 'rails-timeago'
 gem 'dalli'
 gem 'connection_pool'
 #gem 'haikunator', :git => 'https://github.com/BillG18/haikunator.git'
-gem 'haikunator', :git => 'https://github.com/Extinguish-io/haikunator.git'
+gem 'haikunator', :git => 'https://github.com/rdicrist/haikunator.git'
 gem 'mail_form'
 gem 'simple_form'
 gem 'sdoc'
@@ -93,3 +93,5 @@ end
 group :production do
   gem 'rails_12factor'
 end
+
+gem 'kramdown-parser-gfm'
