@@ -133,7 +133,7 @@ GEM
       cucumber-rails (>= 1.1.1)
     cucumber-tag_expressions (1.1.1)
     cucumber-wire (0.0.1)
-    dalli (2.7.8)
+    dalli (3.2.3)
     database_cleaner (1.7.0)
     db_text_search (0.2.2)
       activerecord (>= 4.1.15, < 6.0)
